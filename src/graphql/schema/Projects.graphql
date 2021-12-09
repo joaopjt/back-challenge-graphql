@@ -1,4 +1,4 @@
-type Article {
+type Project {
     id: Int
     name: String
     price: Float
@@ -6,12 +6,12 @@ type Article {
 }
 
 type Query {
-    article(id: Int!): Article
-    articles: [Article]
+    project(id: Int!): Project
+    projects: [Project]
 }
 
 type Mutation {
-    addArticle(title: String!, body: String!): Article
-    updateArticle(id: Int!, title: String, body: String): Article
-    deleteArticle(id: Int !): Article
+    addProject(title: String!, body: String!): Project
+    updateProject(id: Int!, title: String, body: String): Project
+    deleteProject(id: Int !): Project
 }
